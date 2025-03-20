@@ -1,0 +1,20 @@
+{
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": true,
+		"strings": true
+	},
+
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.fixAll.eslint": "explicit"
+	},
+
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true
+}
