@@ -6,6 +6,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "",
   server: {
+    port: 5000,
     proxy: {
       "/todolist": "http://localhost:3000", // Adjust for your backend URL
     },
