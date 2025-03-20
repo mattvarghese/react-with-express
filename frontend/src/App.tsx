@@ -35,7 +35,7 @@ function App() {
 
 // ParentComponent now has a typed children prop
 interface ParentComponentProps {
-  children: React.ReactNode;  // React.ReactNode is the type for any valid React child
+  children: React.ReactNode; // React.ReactNode is the type for any valid React child
 }
 
 // Completely unnecessary component solely to demonstrate passing children

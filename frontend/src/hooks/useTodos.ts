@@ -1,11 +1,12 @@
+import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
+import generateUUID from "../helpers/uuid";
 import { Todo } from "../model/Todo";
 import { TodoRequest } from "../model/TodoRequest";
-import Cookies from "js-cookie";
 
 export default function useTodos() {
   // const sessionId = localStorage.getItem("todos-sessionId") || crypto.randomUUID();
-  const sessionId = Cookies.get("todos-sessionId") || crypto.randomUUID();
+  const sessionId = Cookies.get("todos-sessionId") || generateUUID();
   const [todos, setTodos] = useState<Todo[]>([]);
 
   useEffect(() => {

@@ -12,7 +12,8 @@ export default function TodoSummary({
 }: TodoSummaryProps) {
   const completedTodos = todos.filter((todo) => todo.completed);
   const todoCount = todos.length - completedTodos.length;
-  const titleString = todoCount + ((1 === todoCount) ? " Thing to do!" : " Things to do!");
+  const titleString =
+    todoCount + (1 === todoCount ? " Thing to do!" : " Things to do!");
 
   return (
     <>

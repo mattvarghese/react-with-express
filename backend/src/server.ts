@@ -2,6 +2,7 @@ import cors from 'cors';
 import express, { Request, Response } from 'express';
 import fs from 'fs';
 import path from 'path';
+import generateUUID from './helpers/uuid';
 import { AppSettings, Todo, TodoRequest } from './model';
 
 const app = express(); // Initialize Express app properly
@@ -116,7 +117,7 @@ const addTodo = (request: TodoRequest): string => {
   }
 
   const newTodo: Todo = {
-    id: crypto.randomUUID(),
+    id: generateUUID(),
     title: request.Param,
     completed: false,
   };

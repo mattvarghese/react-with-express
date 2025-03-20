@@ -5,7 +5,9 @@
   "scripts": {
     "prestart": "npm install",
     "start": "ts-node src/server.ts",
-    "build": "tsc"
+    "prebuild": "npm install",
+    "build": "tsc",
+    "clean": "rm -rf node_modules; rm -rf dist; rm package-lock.json"
   },
   "keywords": [],
   "author": "",
